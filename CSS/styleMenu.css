@@ -1,0 +1,161 @@
+.nama-menu{
+    padding-top: 10%;
+    padding-bottom: 7%;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.button{
+    text-decoration: none;
+}
+
+a.button{
+    font-size: 20px;
+    background: #FFCA7A;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #121212;
+    cursor: pointer;
+    display: block;
+}
+
+a.button:hover{
+    display: block;
+    background-color: #FFD390;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.p-menu{
+    padding-bottom: 5%;
+    text-align: center;
+    background-size: 100%;
+}
+
+.p-menu p{
+    font-weight: bold;
+}
+
+.kolom{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.parts{
+    width: 22%;
+    background-color: #FFE6A7;
+    border-radius: 30px;
+    margin: 0 auto 30px auto;
+    margin-bottom: 5%;
+}
+
+.gambar img{
+    width: 100%;
+    text-align: center;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 160px;
+}
+
+.desc p{
+    font-size: 16px;
+    padding-left: 7%;
+    margin: auto;
+    display: flex;
+}
+
+.desc .desc1{
+    font-size: 10px;
+    padding-left: 8%;
+}
+
+.desc .desc2{
+    font-size: 10px;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: justify;
+    font-weight: 400;
+    height: 90px;
+}
+
+.desc .merge{
+    display: block;
+    text-align: left;
+    padding-right: 7%;
+}
+
+.desc .merge .rate{
+    float: right;
+    font-size: 10px;
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.bxs-star{
+    color: #F6E120;
+    font-size: 16px;
+    padding-top: 2%;
+    float: right;
+}
+
+.desc .text-button{
+    padding-top: 13%;
+    padding-bottom: 8%;
+    display: block;
+    padding-right: 7%;
+    text-align: center;
+}
+
+.desc .text-button a.button{
+    font-size: 14px;
+    padding: 3% 0% 3% 0%;
+}
+
+footer{
+    margin-top: -20px;
+}
+
+.nama-menu-cat{
+    text-align: center;
+    margin-bottom: 3%;
+    /* font-size: 35px; */
+    /* font-weight: 800; */
+    text-decoration: underline;
+    margin-top: -3%;
+}
+
+.text-orange{
+    color: #FFAD32;
+}
+
+@media (max-width: 1014px){
+    .parts{
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px){
+    .parts{
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px){
+    .parts{
+        width: 80%;
+    }
+
+    .nama-menu{
+        padding-top: 20%;
+    }
+
+    .nama-menu-cat{
+        margin-top: 10%;
+    }
+}

@@ -1,0 +1,343 @@
+.aboutUs{
+    margin-top: 100px;
+}
+
+.aboutUs h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUs .big-orange{
+    background: rgba(255, 202, 122, 0.80);
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 3%;
+    border-radius: 30px;
+}
+
+.big-orange:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.aboutUs p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SECTION 2 */
+.history{
+    margin-top: 5%;
+    height: 550px;
+    background: #FFD15C;
+    padding: 2%;
+    position: relative;
+}
+
+.history h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.history .big-white{
+    background: #F4F4F4;
+    padding: 3%;
+    width: 55%;
+    margin-top: 2%;
+    margin-left: 13%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.history .big-white:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.history p{
+    width: 85%;
+}
+
+.history img{
+    position: absolute;
+    justify-content: right;
+    align-items: right;
+    height: 250px;
+    margin-top: 15%;
+    margin-left: 60%;
+    z-index: 2;
+}
+
+.history img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* SECTION 3 */
+.visi{
+    margin-top: 5%;
+}
+
+.visi h1{
+    color: #121212;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.visi .text-orange{
+    color: #FFAD32;
+}
+
+.visi .visi-background{
+    background-image: url(../assets/aboutUs2.png);
+    padding: 5%;
+    width: 100%;
+    margin: auto;
+}
+
+.visi .visi-background p{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    color: #FBFBFB;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* SECTION 4 */
+.misi h1{
+    margin-top: 5%;
+    color: #121212;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.misi .text-orange{
+    color: #FFAD32;
+}
+
+
+.card-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    margin-bottom: 100px;
+}
+
+.card{
+    border-radius: 30px;
+    height: 400px;
+    width: 25%;
+    padding: 20px 25px;
+    background: rgba(255, 202, 122, 0.80);
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card:hover .desc{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    color: #F4F4F4;
+}
+
+.card:hover .numbers{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    text-shadow: -1px 1px 0 rgb(255, 255, 255),
+                        1px 1px 0 rgb(255, 255, 255),
+                        1px -1px 0 rgb(255, 255, 255),
+                        -1px -1px 0 rgb(255, 255, 255);
+}
+
+.card .numbers{
+    font-size: 10rem;
+    color: rgba(255, 202, 122, 0.80);
+    text-shadow: -1px 1px 0 rgb(171, 171, 171),
+                        1px 1px 0 #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+    /* text-shadow: 0 0 3px #121212, 0 0 5px #121212; */
+}
+
+.desc{
+    width: 70%;
+    margin-bottom: 25px;
+    color: #121212;
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+    margin: auto;
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+    .aboutUs p{
+        font-size: 0.8rem;
+    }
+    .history{
+        margin-top: 100px;
+        background: #FFD15C;
+        padding: 2%;
+        height: auto;
+    }
+    
+    .history .big-white{
+        background: #F4F4F4;
+        padding: 3%;
+        width: 55%;
+        margin: auto;
+        margin-top: 2%;
+        margin-left: 9%;
+        border-radius: 30px;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .history p{
+        width: 85%;
+        font-size: 0.8rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .history img{
+        position: unset;
+        height: 200px;
+        margin-left: 62%;
+        margin-bottom: 5%;
+    }
+
+    .visi .visi-background p{
+        font-size: 0.8rem;
+    }
+
+    .card{
+        height: 380px;
+    }
+    .card .numbers{
+        font-size: 7rem;
+    }
+    .desc{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:540px){
+    .aboutUs .big-orange{
+        width: 70%;
+    }
+    .aboutUs p{
+        font-size: 0.7rem;
+    }
+    .history{
+        height: 450px;
+    }
+    .history img{
+        height: 150px;
+    }
+    .history p{
+        font-size: 0.7rem;
+    }
+    .card{
+        height: 330px;
+    }
+    .card .numbers{
+        font-size: 6rem;
+    }
+    .desc{
+        font-size: 0.7rem;
+    }
+    .misi{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 414px){
+    .aboutUs .big-orange{
+        width: 70%;
+    }
+    .aboutUs p{
+        font-size: 0.7rem;
+    }
+    
+    .history{
+        margin-top: 40px;
+        background: #FFD15C;
+        padding: 2%;
+        padding-bottom: 10%;
+        height: auto;
+        position: unset;
+    }
+
+    .history h1{
+        margin-bottom: 15px;
+    }
+    
+    .history .big-white{
+        position: unset;
+        background: #F4F4F4;
+        padding: 3%;
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 30px;
+        text-align: center;
+    }
+    
+    .history p{
+        width: 85%;
+        font-size: 0.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .history img{
+        position: unset;
+        display: block;
+        height: 120px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .visi .visi-background p{
+        font-size: 0.5rem;
+    }
+
+    .card-wrap{
+        display: unset;
+        min-height: 100px;
+        width: 100%;
+    }
+    .card{
+        border-radius: 30px;
+        height: 200px;
+        width: 50%;
+        padding: 10px 25px;
+        background: rgba(255, 202, 122, 0.80);
+        margin: auto;
+        margin-bottom: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .card .numbers{
+        font-size: 5rem;
+        margin-top: 0;
+    }
+    .desc{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+}

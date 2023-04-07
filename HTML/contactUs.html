@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styleContactUs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a class = "logo" href="home.html">VOrgreens</a></h1>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="nav-links" id="navbar">
+                <li><a href="javascript:void(0)" class="close">&times;</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="findUs.html">Find Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- konten -->
+    <div class="section" id="contact">
+        <div class="orange-box">
+            <h1>Contact Us</h1>
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <div class="error-container">
+                    <div class="error" id="err-name"></div>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <div class="error-container">
+                    <div class="error" id="err-email"></div>
+                </div>
+                <div class="gender" required>
+                    <div class="gender-box">
+                        <input type="radio" name="gender" id="male" class="input-radio">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender-box">
+                        <input type="radio" name="gender" id="female" class="input-radio">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="error-container">
+                    <div class="error" id="err-gender"></div>
+                </div>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
+                <div class="error-container">
+                    <div class="error" id="err-message"></div>
+                </div>
+                <div class="konten">
+                    <input type="checkbox" id="term" required>
+                    <label for="">I Agree to Subscribe VOgreens Newsletter</label>
+                </div>
+                <div class="error-container">
+                    <div class="error" id="err-term"></div>
+                </div>
+                <div class="btn-submit">
+                    <button class="submit" id="submit" onclick="ValidateData()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <div class="footers">
+                <div class="footer-section">
+                    <h3 class="spesial">VOrgreens</h3>
+                    <p class="pencet" id="spes">VOrgreens is an Indonesia's plant-based eatery chain serving delicious healthy, ethical, and sustainable food.</p>
+                    <div class="medsos">
+                        <a href="https://www.facebook.com/"><img class="logoMedsos" src="../assets//facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/"><img class="logoMedsos" src="../assets//instagram.png" alt=""></a>
+                        <a href="https://www.twitter.com/"><img class="logoMedsos" src="../assets//twitter.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <a href="aboutUs.html#history" class="pencet-1" id="abt">History</a>
+                    <a href="aboutUs.html#visi" class="pencet1" id="abt">Vision</a>
+                    <a href="aboutUs.html#misi" class="pencet1" id="abt">Mission</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Find Us</h3>
+                    <a href="findUs.html" class="pencet-1" id="fnd">Bussiness hours</a>
+                    <a href="findUs.html" class="pencet1" id="fnd">Address</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <a href="contactUs.html#contact" class="pencet-1" id="ctc">Contact</a>
+                    <a href="contactUs.html#contact" class="pencet1" id="ctc">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/validation.js"></script>
+    <script src="../JS/header.js"></script>
+</body>
+</html>
